@@ -1,7 +1,13 @@
 <?php
-echo '<h1>hello</h1>';
-echo 'git';
 
+require 'config.php';
+require 'database\connection.php';
+require 'database\queryBuilder.php';
 
+$db = Connection::makeConnection($database);
 
-sadsd
+$query = new QueryBuilder($db);
+
+$task = $query->fetchAll('player');
+
+print_r($task);

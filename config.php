@@ -6,3 +6,10 @@
  * Time: 22:31
  */
 
+return $database = [
+    'host' => "localhost",
+    'driver' => 'mysql',
+    'name' => 'gra',
+    'user' => 'root',
+    'password' => '',
+];
